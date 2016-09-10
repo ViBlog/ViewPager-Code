@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         List<PageData> pageDataList = getPageDataList();
         MainActivityPagerAdapter adapter = new MainActivityPagerAdapter(pageDataList);
         activityMainViewpager.setAdapter(adapter);
-        activityMainViewpager.setOffscreenPageLimit(pageDataList.size() - 1);
     }
 
     private List<PageData> getPageDataList() {

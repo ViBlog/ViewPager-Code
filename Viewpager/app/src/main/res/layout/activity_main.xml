@@ -14,6 +14,7 @@
             android:id="@+id/activity_main_pager_indicator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/pager_indicator_title_color"
             />
     </android.support.v4.view.ViewPager>
 </RelativeLayout>
