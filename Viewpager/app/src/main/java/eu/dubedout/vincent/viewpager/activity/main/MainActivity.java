@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
     private List<PageData> getPageDataList() {
         List<PageData> dummyDataList = new ArrayList<>();
-        dummyDataList.add(new PageData("This is going to be"));
-        dummyDataList.add(new PageData("LEGEN"));
-        dummyDataList.add(new PageData("... wait for it ..."));
-        dummyDataList.add(new PageData("DARY"));
+        dummyDataList.add(new PageData("Page 1", "This is going to be"));
+        dummyDataList.add(new PageData("Page 2", "LEGEN"));
+        dummyDataList.add(new PageData("Page 3", "... wait for it ..."));
+        dummyDataList.add(new PageData("Page 4", "DARY"));
 
         return dummyDataList;
     }
