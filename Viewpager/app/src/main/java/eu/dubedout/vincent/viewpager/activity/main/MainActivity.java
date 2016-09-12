@@ -3,6 +3,7 @@ package eu.dubedout.vincent.viewpager.activity.main;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
         List<PageData> pageDataList = getPageDataList();
         MainActivityPagerAdapter adapter = new MainActivityPagerAdapter(pageDataList);
         activityMainViewpager.setAdapter(adapter);
+        activityMainViewpager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+            @Override
+            public void onPageSelected(int position) {
+                Toast.makeText(MainActivity.this, "New page selected: "+position, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private List<PageData> getPageDataList() {
